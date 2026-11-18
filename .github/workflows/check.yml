@@ -1,4 +1,4 @@
-name: Apple Korea intern check
+name: JOB ALERT check
 
 on:
   schedule:
@@ -15,24 +15,24 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check Apple Korea jobs
+      - name: Check jobs (Apple, Amazon/AWS, Microsoft, Google)
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
         run: python3 check_jobs.py
 
-      - name: Save seen.json / keep schedule alive
+      - name: Save state / keep schedule alive
         run: |
           git config user.name "intern-alert-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain seen.json)" ]; then
-            git add seen.json
-            git commit -m "Record notified postings"
+          if [ -n "$(git status --porcelain seen.json status.json)" ]; then
+            git add seen.json status.json 2>/dev/null || git add seen.json
+            git commit -m "Update alert state"
             git push
           else
             # 저장소가 60일간 활동이 없으면 GitHub이 스케줄을 끄므로 45일마다 빈 커밋

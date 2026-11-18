@@ -1,39 +1,52 @@
-# JOB ALERT — 채용 공고 알림 (현재: Apple Korea)
+# JOB ALERT — 한국 채용 공고 알림
 
-GitHub Actions가 10분마다 [jobs.apple.com 한국 공고](https://jobs.apple.com/ko-kr/search?location=korea-republic-of-KOR)를 확인하고,
-처음 보는 인턴 공고(학생 팀 / 제목에 intern·인턴)가 있으면 공고마다 Gmail 알림을 1통씩 보냅니다.
-보내는 사람은 `JOB ALERT`, 제목은 `[인턴|정규직|계약직] 포지션명 (M.D 마감)` 형식입니다. 컴퓨터가 꺼져 있어도 동작합니다.
+GitHub Actions가 10분마다 아래 회사의 **한국 공고**를 확인하고, 처음 보는 대상 공고가 있으면 공고마다 Gmail 알림을 1통씩 보냅니다.
+컴퓨터가 꺼져 있어도 동작합니다.
 
-## 설정 (한 번만, 약 10분)
+| 회사 | 출처 | 인턴 판별 |
+|---|---|---|
+| Apple | jobs.apple.com (한국) | '학생' 팀 또는 제목에 intern |
+| Amazon / AWS | amazon.jobs (한국) | `is_intern` 필드 또는 제목 |
+| Microsoft | apply.careers.microsoft.com (Korea) | 고용 형태 Internship 필터 또는 제목 |
+| Google | google.com/about/careers (South Korea) | 고용 형태 INTERN 필터 또는 제목 |
 
-### 1. Gmail 앱 비밀번호 만들기
-1. Google 계정에 **2단계 인증**이 켜져 있어야 합니다.
-2. <https://myaccount.google.com/apppasswords> 에서 이름(예: `apple-alert`)을 입력하고 만들기
-3. 나오는 16자리 비밀번호를 복사해 둡니다.
+- 보내는 사람: `JOB ALERT`
+- 제목: `[인턴|정규직|계약직] 포지션명 (M.D 마감)` (마감일이 없으면 `마감일 미기재`)
+- 본문: 마감 D-day 배지 → 핵심 정보 → 지원 버튼 → 전형 일정 → 자격(원문) → 업무(원문)
 
-### 2. GitHub 저장소 만들기
-1. <https://github.com/new> 에서 새 저장소 생성 (예: `apple-korea-intern-alert`)
-   - **Public 권장**: Actions 사용 시간이 무제한 무료입니다. 비밀번호는 Secrets에 저장되어 공개되지 않습니다.
-   - Private으로 하면 월 2,000분 무료 한도 때문에 `check.yml`의 cron을 `*/30 * * * *`(30분마다)로 바꾸세요.
-2. 이 폴더의 파일을 올립니다 (`.github/workflows/check.yml` 포함):
-   ```bash
-   git remote add origin https://github.com/<내아이디>/apple-korea-intern-alert.git
-   git push -u origin main
-   ```
+## 알림 대상 바꾸기
+`.github/workflows/check.yml`의 실행 줄을 바꿉니다.
 
-### 3. Secrets 등록
-저장소 → **Settings → Secrets and variables → Actions → New repository secret**
+| 원하는 것 | 실행 줄 |
+|---|---|
+| 인턴만 (기본) | `python3 check_jobs.py` |
+| 인턴 + 정규직 | `python3 check_jobs.py --kinds=인턴,정규직` |
+| 전부 | `python3 check_jobs.py --all` |
+| 일부 회사만 | `python3 check_jobs.py --only=apple,google` |
+
+처음 정규직을 켜면 그 시점에 열려 있는 정규직 공고가 한꺼번에 옵니다(현재 100건 이상).
+
+## 설정
+1. Gmail 앱 비밀번호: 보내는 계정에서 2단계 인증을 켜고 <https://myaccount.google.com/apppasswords> 에서 생성
+2. 저장소 **Settings → Secrets and variables → Actions**
+
 | 이름 | 값 |
 |---|---|
-| `GMAIL_USER` | 보내는 Gmail 주소 |
-| `GMAIL_APP_PASSWORD` | 1단계의 16자리 앱 비밀번호 |
-| `MAIL_TO` | (선택) 받을 주소. 비우면 `GMAIL_USER`로 보냄. 여러 개는 쉼표로 |
+| `GMAIL_USER` | 보내는 Gmail 주소 (알림 전용 계정 권장, 프로필 사진이 발신자 사진으로 보임) |
+| `GMAIL_APP_PASSWORD` | 그 계정의 16자리 앱 비밀번호 |
+| `MAIL_TO` | 받을 주소 (여러 개는 쉼표) |
 
-### 4. 첫 실행
-**Actions 탭 → Apple Korea intern check → Run workflow**.
-현재 열려 있는 인턴 공고가 첫 메일로 오면 설정 완료입니다. 이후에는 새 공고가 생길 때만 메일이 옵니다.
+3. **Actions → JOB ALERT check → Run workflow** 로 수동 실행 가능
 
-## 참고
-- Apple 사이트 구조가 바뀌어 체크가 실패하면 GitHub이 "workflow run failed" 메일을 보내줍니다. 그 메일이 오면 스크립트 수정이 필요하다는 뜻입니다.
-- 인턴 외 한국 신규 공고 전체를 받고 싶으면 `check.yml`의 실행 줄을 `python3 check_jobs.py --all`로 바꾸세요.
-- 로컬 테스트: `python3 check_jobs.py --dry-run`
+## 장애 대응
+- 한 회사 수집이 실패해도 나머지 회사는 계속 확인합니다.
+- 같은 회사가 약 1시간 연속 실패하면 `[JOB ALERT] <회사> 공고 수집 실패 중` 메일이 1회 오고, 복구되면 `복구됨` 메일이 옵니다. 실패 메일이 오면 그 회사 사이트 구조가 바뀐 것이라 `sources.py` 수정이 필요합니다.
+- 상태 파일: `seen.json`(알림 보낸 공고), `status.json`(회사별 연속 실패 횟수)
+
+## 회사 추가하기
+`sources.py`에 `Job` 리스트를 돌려주는 함수를 만들고 맨 아래 `SOURCES`에 등록하면 됩니다.
+
+## 로컬 테스트
+```bash
+python3 check_jobs.py --dry-run
+```
