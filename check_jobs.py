@@ -20,8 +20,9 @@ import smtplib
 import sys
 import time
 import urllib.request
+from email.header import Header
 from email.mime.text import MIMEText
-from email.utils import formatdate
+from email.utils import formataddr, formatdate
 from html import escape
 from pathlib import Path
 
@@ -30,6 +31,7 @@ LOCATION = "korea-republic-of-KOR"
 SEARCH_URL = "https://jobs.apple.com/{locale}/search?location={loc}&page={page}"
 DETAIL_URL = "https://jobs.apple.com/{locale}/details/{id}/{slug}"
 SEEN_FILE = Path(__file__).with_name("seen.json")
+SENDER_NAME = "Internship Alerts"
 
 INTERN_TEAM_CODES = {"STDNT"}  # Apple 의 '학생' 팀 (인턴십)
 INTERN_PATTERN = re.compile(r"intern|인턴|co-?op|student|학생", re.I)
@@ -100,26 +102,108 @@ def save_seen(seen):
     SEEN_FILE.write_text(json.dumps(seen, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
 
+def fetch_details(job):
+    """공고 상세(JD) 데이터. 실패해도 알림은 보내야 하므로 빈 dict 반환."""
+    try:
+        m = HYDRATION_RE.search(fetch(job_url(job)))
+        return json.loads(json.loads(m.group(1)))["loaderData"]["jobDetails"]["jobsData"]
+    except Exception as e:  # noqa: BLE001
+        print(f"상세 페이지 파싱 실패 ({job['positionId']}): {e}", file=sys.stderr)
+        return {}
+
+
+MONTHS = r"(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
+DATE_RE = re.compile(
+    rf"\b{MONTHS}\s*\d{{1,2}}\b|\b\d{{1,2}}\s*{MONTHS}|\d{{1,2}}\s*월\s*\d{{1,2}}\s*일|"
+    r"\b20\d{2}[./-]\d{1,2}[./-]\d{1,2}\b|\b\d{1,2}/\d{1,2}\b",
+    re.I,
+)
+SCHEDULE_KW_RE = re.compile(
+    r"deadline|timeline|timing|interview|duration|period|start date|apply by|closing|"
+    r"마감|일정|기간|면접|전형|근무|시작",
+    re.I,
+)
+DEADLINE_RE = re.compile(r"deadline|apply by|closing|close[sd]? on|마감", re.I)
+
+
+def clean_line(line):
+    return re.sub(r"\s+", " ", line.strip().lstrip("•·-*–● ").strip())
+
+
+def extract_schedule(detail):
+    """JD 에서 날짜·일정이 들어간 줄과 지원 마감 줄을 뽑는다."""
+    schedule, deadline = [], None
+    for field in ("description", "minimumQualifications", "responsibilities", "jobSummary"):
+        for raw in (detail.get(field) or "").splitlines():
+            line = clean_line(raw)
+            if not line or len(line) > 220 or line in schedule:
+                continue
+            has_date = bool(DATE_RE.search(line))
+            if has_date or (SCHEDULE_KW_RE.search(line) and line.endswith(":")):
+                schedule.append(line)
+                if deadline is None and has_date and DEADLINE_RE.search(line):
+                    deadline = line
+    return deadline, schedule
+
+
+def short(text, n):
+    text = re.sub(r"\s+", " ", (text or "").strip())
+    return text if len(text) <= n else text[:n] + "…"
+
+
+def bullets(text, limit=5):
+    items = [clean_line(l) for l in (text or "").splitlines() if clean_line(l)]
+    return "".join(f"<li>{escape(short(i, 200))}</li>" for i in items[:limit])
+
+
 def build_email(new_jobs):
-    subject = f"[Apple Korea] 새 인턴 공고 {len(new_jobs)}건: {new_jobs[0]['postingTitle']}"
-    rows = []
+    blocks, deadlines = [], []
     for j in new_jobs:
+        d = fetch_details(j)
+        deadline, schedule = extract_schedule(d)
+        deadlines.append(deadline)
+        url = escape(job_url(j))
         loc = ", ".join(l.get("name", "") for l in j.get("locations", []))
         team = (j.get("team") or {}).get("teamName", "")
-        summary = (j.get("jobSummary") or "").strip().replace("\n", " ")
-        if len(summary) > 300:
-            summary = summary[:300] + "…"
-        rows.append(
-            f'<div style="margin:0 0 20px">'
-            f'<a href="{escape(job_url(j))}" style="font-size:17px;font-weight:600">{escape(j["postingTitle"])}</a><br>'
-            f'<span style="color:#555">{escape(team)} · {escape(loc)} · 게시일 {escape(j.get("postingDate", ""))}</span>'
-            f'<p style="color:#333;margin:6px 0">{escape(summary)}</p>'
-            f'<a href="{escape(job_url(j))}">→ 바로 지원하러 가기</a></div>'
+
+        if deadline:
+            top = (f'<div style="background:#fff1f0;border-left:4px solid #e5484d;padding:10px 14px;'
+                   f'font-size:16px;font-weight:600;margin:8px 0">⏰ 지원 마감: {escape(deadline)}</div>')
+        else:
+            top = ('<div style="background:#f5f5f7;border-left:4px solid #999;padding:10px 14px;margin:8px 0">'
+                   '⏰ JD에 지원 마감일이 명시되어 있지 않음 → 최대한 빨리 지원 권장</div>')
+        sched_html = (
+            f'<p style="margin:12px 0 4px;font-weight:600">📅 일정</p>'
+            f'<ul style="margin:0;padding-left:20px">{"".join(f"<li>{escape(s)}</li>" for s in schedule)}</ul>'
+            if schedule else ""
         )
+        resp = bullets(d.get("responsibilities"), 4)
+        quals = bullets(d.get("minimumQualifications"), 4)
+        blocks.append(
+            '<div style="margin:0 0 28px;padding-bottom:20px;border-bottom:1px solid #ddd">'
+            f'<a href="{url}" style="font-size:19px;font-weight:700;color:#06c;text-decoration:none">'
+            f'{escape(j["postingTitle"])}</a>'
+            f'{top}{sched_html}'
+            f'<p style="margin:14px 0"><a href="{url}" style="background:#0071e3;color:#fff;padding:9px 18px;'
+            f'border-radius:18px;text-decoration:none;font-weight:600">지원하러 가기 →</a></p>'
+            f'<p style="color:#555;font-size:13px;margin:6px 0">{escape(team)} · {escape(loc)} · '
+            f'게시일 {escape(j.get("postingDate", ""))}</p>'
+            + (f'<p style="margin:12px 0 4px;font-weight:600">주요 업무</p><ul style="margin:0;padding-left:20px;'
+               f'color:#333">{resp}</ul>' if resp else "")
+            + (f'<p style="margin:12px 0 4px;font-weight:600">필수 자격</p><ul style="margin:0;padding-left:20px;'
+               f'color:#333">{quals}</ul>' if quals else "")
+            + ("" if resp else f'<p style="color:#333">{escape(short(j.get("jobSummary"), 300))}</p>')
+            + "</div>"
+        )
+
+    first = new_jobs[0]["postingTitle"]
+    dl = f" (마감: {short(deadlines[0], 40)})" if deadlines[0] else ""
+    more = f" 외 {len(new_jobs) - 1}건" if len(new_jobs) > 1 else ""
+    subject = f"[Apple Korea 인턴] {first}{more}{dl}"
     body = (
-        '<div style="font-family:-apple-system,sans-serif;max-width:640px">'
-        f'<h2>Apple Korea 새 인턴 공고 {len(new_jobs)}건</h2>{"".join(rows)}'
-        f'<p style="color:#888;font-size:12px">전체 한국 공고: '
+        '<div style="font-family:-apple-system,BlinkMacSystemFont,sans-serif;max-width:640px;line-height:1.5">'
+        f'{"".join(blocks)}'
+        f'<p style="color:#888;font-size:12px">Apple Korea 새 인턴 공고 {len(new_jobs)}건 · 전체 한국 공고: '
         f'<a href="https://jobs.apple.com/{LOCALE}/search?location={LOCATION}">jobs.apple.com</a></p></div>'
     )
     return subject, body
@@ -130,7 +214,8 @@ def send_email(subject, html):
     pw = os.environ["GMAIL_APP_PASSWORD"].replace(" ", "")
     to = os.environ.get("MAIL_TO") or user
     msg = MIMEText(html, "html", "utf-8")
-    msg["Subject"], msg["From"], msg["To"], msg["Date"] = subject, user, to, formatdate(localtime=True)
+    msg["Subject"], msg["To"], msg["Date"] = subject, to, formatdate(localtime=True)
+    msg["From"] = formataddr((str(Header(SENDER_NAME, "utf-8")), user))
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
         s.login(user, pw)
         s.sendmail(user, [a.strip() for a in to.split(",")], msg.as_string())
