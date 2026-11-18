@@ -1,7 +1,8 @@
-# Apple Korea 인턴 공고 알림
+# JOB ALERT — 채용 공고 알림 (현재: Apple Korea)
 
 GitHub Actions가 10분마다 [jobs.apple.com 한국 공고](https://jobs.apple.com/ko-kr/search?location=korea-republic-of-KOR)를 확인하고,
-처음 보는 인턴 공고(학생 팀 / 제목에 intern·인턴)가 있으면 Gmail로 알림을 보냅니다. 컴퓨터가 꺼져 있어도 동작합니다.
+처음 보는 인턴 공고(학생 팀 / 제목에 intern·인턴)가 있으면 공고마다 Gmail 알림을 1통씩 보냅니다.
+보내는 사람은 `JOB ALERT`, 제목은 `[인턴|정규직|계약직] 포지션명 (M.D 마감)` 형식입니다. 컴퓨터가 꺼져 있어도 동작합니다.
 
 ## 설정 (한 번만, 약 10분)
 
