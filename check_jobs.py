@@ -13,6 +13,7 @@ seen.json 에 기록한다. 한 회사 수집이 실패해도 나머지는 계�
   --dry-run           메일을 보내지 않고 상태 파일도 바꾸지 않음
   --kinds=인턴,정규직  알림 받을 고용 형태 (기본: 인턴). --all 은 전체
   --only=apple,google 일부 회사만 실행
+  --no-screen         profile.json 기반 지원 불가 공고 거르기를 끔
 """
 import json
 import os
@@ -29,11 +30,13 @@ from email.utils import formataddr, formatdate
 from html import escape
 from pathlib import Path
 
+from screening import load_profile, screen
 from sources import SOURCES
 
 HERE = Path(__file__).parent
 SEEN_FILE = HERE / "seen.json"
 STATUS_FILE = HERE / "status.json"
+SCREENED_FILE = HERE / "screened.json"  # profile 기준 지원 불가로 걸러진 공고 (profile 바꾸면 이 파일 삭제 → 재판정)
 LOGO_FILE = HERE / "assets" / "job-alert.png"
 SENDER_NAME = "JOB ALERT"
 KST = timezone(timedelta(hours=9))
@@ -344,9 +347,11 @@ def main():
     only = arg("only")
     names = [n for n in SOURCES if not only or n in only.split(",")]
 
-    seen, status = load_seen(), load_json(STATUS_FILE)
+    no_screen = "--no-screen" in sys.argv
+    seen, status, screened = load_seen(), load_json(STATUS_FILE), load_json(SCREENED_FILE)
+    profile = load_profile()
     today = datetime.now(KST).date()
-    seen_dirty = status_dirty = False
+    seen_dirty = status_dirty = screened_dirty = False
 
     for name in names:
         try:
@@ -369,10 +374,20 @@ def main():
             status_dirty = True
 
         targets = [j for j in jobs if kinds is None or j.kind in kinds]
-        new = [j for j in targets if j.key not in seen]
+        new = [j for j in targets if j.key not in seen and j.key not in screened]
         print(f"[{name}] 공고 {len(jobs)}건, 대상 {len(targets)}건, 신규 {len(new)}건")
         for j in new:
-            subject, html = build_email(j, j.detail(), today)
+            detail = j.detail()
+            reasons = [] if no_screen else screen(j, detail, profile)
+            if reasons:
+                print(f"  SKIP {j.key} {j.title} — {', '.join(reasons)}")
+                if not dry:
+                    screened[j.key] = {"title": j.title, "company": j.company, "kind": j.kind,
+                                       "reasons": reasons, "url": j.url,
+                                       "screened": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+                    screened_dirty = True
+                continue
+            subject, html = build_email(j, detail, today)
             print(f"  NEW {j.key} → {subject}")
             if dry:
                 continue
@@ -388,6 +403,8 @@ def main():
             save_json(SEEN_FILE, seen)  # 키 형식 마이그레이션
         if status_dirty:
             save_json(STATUS_FILE, status)
+        if screened_dirty:
+            save_json(SCREENED_FILE, screened)
 
 
 if __name__ == "__main__":

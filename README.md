@@ -14,6 +14,24 @@ GitHub Actions가 10분마다 아래 회사의 **한국 공고**를 확인하고
 - 제목: `[인턴|정규직|계약직] 포지션명 (M.D 마감)` (마감일이 없으면 `마감일 미기재`)
 - 본문: 마감 D-day 배지 → 핵심 정보 → 지원 버튼 → 전형 일정 → 자격(원문) → 업무(원문)
 
+## 지원 불가 공고 거르기 (profile.json)
+새 공고의 **필수 자격**을 `profile.json`과 비교해 지원이 아예 불가능한 공고는 메일을 보내지 않고 `screened.json`에 사유와 함께 기록합니다.
+애매하면 통과시킵니다(놓치는 것보다 메일 한 통이 낫다는 원칙).
+
+| 거르는 조건 | profile 항목 |
+|---|---|
+| 필수 경력 연수가 허용치 초과 (OR 대체 경로는 가장 낮은 값, 별도 조건끼리는 가장 높은 값) | `max_required_years` |
+| 제목이 Senior / Sr / Principal / Head / Director / Lead 등 (인턴 제외) | `exclude_senior_titles` |
+| 제목이 Engineer / Developer / Scientist / Technician / Architect 등 기술직 | `exclude_technical_roles` |
+| 석사 이상 학위만 허용 (학사·equivalent 대체 불가) | `highest_degree` |
+| 기술 전공(CS, 공학 등) 학위만 허용 (비즈니스 전공·equivalent 대체 불가) | — |
+| 프로필에 없는 언어(일본어·중국어 등) 필수 | `languages` |
+| 장애인·보훈 등 대상 제한 전형 | `special_programs` |
+
+- 이 저장소는 공개라서 profile에는 이름·학교 같은 개인정보를 넣지 않습니다.
+- profile을 바꾼 뒤 이전에 걸러진 공고도 다시 판정하려면 `screened.json`을 삭제하세요.
+- 거르기를 끄려면 실행 줄에 `--no-screen`을 붙입니다.
+
 ## 알림 대상 바꾸기
 `.github/workflows/check.yml`의 실행 줄을 바꿉니다.
 
@@ -41,7 +59,7 @@ GitHub Actions가 10분마다 아래 회사의 **한국 공고**를 확인하고
 ## 장애 대응
 - 한 회사 수집이 실패해도 나머지 회사는 계속 확인합니다.
 - 같은 회사가 약 1시간 연속 실패하면 `[JOB ALERT] <회사> 공고 수집 실패 중` 메일이 1회 오고, 복구되면 `복구됨` 메일이 옵니다. 실패 메일이 오면 그 회사 사이트 구조가 바뀐 것이라 `sources.py` 수정이 필요합니다.
-- 상태 파일: `seen.json`(알림 보낸 공고), `status.json`(회사별 연속 실패 횟수)
+- 상태 파일: `seen.json`(알림 보낸 공고), `screened.json`(지원 불가로 걸러진 공고와 사유), `status.json`(회사별 연속 실패 횟수)
 
 ## 회사 추가하기
 `sources.py`에 `Job` 리스트를 돌려주는 함수를 만들고 맨 아래 `SOURCES`에 등록하면 됩니다.

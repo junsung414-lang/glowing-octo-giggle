@@ -1,0 +1,11 @@
+{
+  "_comment": "지원자 조건. 이 저장소는 공개이므로 이름·학교·연락처 같은 개인정보는 넣지 않는다. 공고의 '필수' 자격과 비교해 확실히 불가능한 공고만 거른다.",
+  "experience_years": 0,
+  "max_required_years": 1,
+  "highest_degree": "bachelor",
+  "degree_fields": ["business", "public administration", "social science", "economics", "management"],
+  "languages": ["korean", "english"],
+  "exclude_technical_roles": true,
+  "exclude_senior_titles": true,
+  "special_programs": []
+}
