@@ -26,7 +26,7 @@ jobs:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
-        run: python3 check_jobs.py
+        run: python3 check_jobs.py --kinds=인턴,정규직
 
       - name: Save state / keep schedule alive
         run: |

@@ -1,6 +1,6 @@
 # JOB ALERT — 한국 채용 공고 알림
 
-cron-job.org가 매시 정각 GitHub Actions를 실행시켜 아래 회사의 **한국 공고**를 확인하고, 처음 보는 대상 공고가 있으면 공고마다 Gmail 알림을 1통씩 보냅니다.
+cron-job.org가 매시 정각 GitHub Actions를 실행시켜 아래 회사의 **한국 공고**를 확인하고, 처음 보는 **인턴·정규직** 공고가 있으면 공고마다 Gmail 알림을 1통씩 보냅니다.
 컴퓨터가 꺼져 있어도 동작합니다.
 
 | 회사 | 출처 | 인턴 판별 |
@@ -37,12 +37,13 @@ cron-job.org가 매시 정각 GitHub Actions를 실행시켜 아래 회사의 **
 
 | 원하는 것 | 실행 줄 |
 |---|---|
-| 인턴만 (기본) | `python3 check_jobs.py` |
-| 인턴 + 정규직 | `python3 check_jobs.py --kinds=인턴,정규직` |
+| 인턴만 | `python3 check_jobs.py` |
+| 인턴 + 정규직 (**현재 설정**) | `python3 check_jobs.py --kinds=인턴,정규직` |
+| 인턴 + 정규직 + 계약직 | `python3 check_jobs.py --kinds=인턴,정규직,계약직` |
 | 전부 | `python3 check_jobs.py --all` |
 | 일부 회사만 | `python3 check_jobs.py --only=apple,google` |
 
-처음 정규직을 켜면 그 시점에 열려 있는 정규직 공고가 한꺼번에 옵니다(현재 100건 이상).
+새 고용 형태를 켜면 그 시점에 열려 있는 해당 공고 중 profile 거르기를 통과한 공고가 한 번에 옵니다.
 
 ## 설정
 1. Gmail 앱 비밀번호: 보내는 계정에서 2단계 인증을 켜고 <https://myaccount.google.com/apppasswords> 에서 생성

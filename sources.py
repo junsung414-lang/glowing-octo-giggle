@@ -42,11 +42,12 @@ class Job:
         return f"{self.source}:{self.id}"
 
     def detail(self):
+        """JD 본문. 가져오지 못하면 None → 호출 측이 이번 회차를 건너뛰고 다음에 재시도."""
         try:
             return self._detail() or {}
-        except Exception as e:  # noqa: BLE001  상세 실패해도 알림은 보낸다
+        except Exception as e:  # noqa: BLE001
             print(f"  상세 파싱 실패 ({self.key}): {e}", file=sys.stderr)
-            return {}
+            return None
 
 
 def kind_of(title, intern_flag=False):
@@ -251,6 +252,7 @@ def microsoft():
     jobs = []
     for pid, p in raw.items():
         def detail(pid=pid):
+            time.sleep(1.5)  # 상세 요청 연속 호출 시 429 예방
             d = fetch_json(f"{MS_API}/position_details?position_id={pid}&domain=microsoft.com&hl=en")["data"]
             return split_sections(html_text(d.get("jobDescription")))
 

@@ -13,7 +13,7 @@ SENIOR_TITLE = re.compile(
     r"\b(senior|sr\.?|principal|staff|head|director|vp|vice president|chief|lead|leader|manager of managers)\b", re.I)
 TECH_TITLE = re.compile(
     r"\b(engineer|engineering|developer|scientist|technician|architect|sde|programmer|devops|sre)\b", re.I)
-YEARS = re.compile(r"(\d{1,2})\s*\+?\s*(?:or more\s+)?(?:years?|yrs?)\b", re.I)
+YEARS = re.compile(r"(?<!\d)(\d{1,2})\s*\+?\s*(?:or more\s+)?(?:years?|yrs?)\b|(?<!\d)(\d{1,2})\s*년\s*(?:이상|의|간|차)?", re.I)
 OR_YEARS = re.compile(r"\bor\s+(?:equivalent\s+)?(\d{1,2})\s*\+?\s*years?", re.I)  # '학위 or N년 경력' 같은 대체 경로
 EQUIVALENT = re.compile(r"equivalent (practical |professional |work )?(experience|combination)|or equivalent", re.I)
 ADV_DEGREE = re.compile(r"\b(master'?s|ph\.?\s?d|doctora(l|te)|mba)\b", re.I)
@@ -69,7 +69,7 @@ def screen(job, detail, profile=None):
     #    학위 대신 'or 6+ years' 같은 대체 경로는 무시.
     need = 0
     for line in _lines(minq):
-        ys = [int(y) for y in YEARS.findall(OR_YEARS.sub("", line)) if 0 < int(y) < 40]
+        ys = [int(a or b) for a, b in YEARS.findall(OR_YEARS.sub("", line)) if 0 < int(a or b) < 40]
         if ys:
             need = max(need, min(ys))
     if need > p.get("max_required_years", 1):

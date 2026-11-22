@@ -378,6 +378,9 @@ def main():
         print(f"[{name}] 공고 {len(jobs)}건, 대상 {len(targets)}건, 신규 {len(new)}건")
         for j in new:
             detail = j.detail()
+            if detail is None:  # JD 를 못 가져오면 판정 불가 → 알림·기록 없이 다음 회차에 재시도
+                print(f"  RETRY {j.key} {j.title} — 상세 JD 수집 실패, 다음 회차에 재시도")
+                continue
             reasons = [] if no_screen else screen(j, detail, profile)
             if reasons:
                 print(f"  SKIP {j.key} {j.title} — {', '.join(reasons)}")
