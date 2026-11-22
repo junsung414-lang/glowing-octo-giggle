@@ -96,7 +96,16 @@ def screen(job, detail, profile=None):
             continue
         break
 
-    # 6. 대상 제한 전형 (장애인·보훈 등)
+    # 6. 희망 직무: 제외 키워드는 모두에, 포함 키워드는 인턴 외 공고에 적용 (인턴은 드물어서 제외 키워드만)
+    tr = p.get("target_roles") or {}
+    hay = f"{title}\n{job.team}"
+    ex = next((k for k in tr.get("exclude", []) if re.search(k, hay, re.I)), None)
+    if ex:
+        reasons.append(f"희망 직무 아님 ({re.search(ex, hay, re.I).group(0)})")
+    elif tr.get("include") and job.kind != "인턴" and not any(re.search(k, hay, re.I) for k in tr["include"]):
+        reasons.append(f"희망 직무 아님 ({job.team or '분류 없음'})")
+
+    # 7. 대상 제한 전형 (장애인·보훈 등)
     blob = f"{title}\n{minq}"
     for prog, rx in SPECIAL.items():
         if prog not in p.get("special_programs", []) and rx.search(blob):
