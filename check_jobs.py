@@ -40,7 +40,7 @@ SCREENED_FILE = HERE / "screened.json"  # profile 기준 지원 불가로 걸러
 LOGO_FILE = HERE / "assets" / "job-alert.png"
 SENDER_NAME = "JOB ALERT"
 KST = timezone(timedelta(hours=9))
-FAIL_ALERT_AFTER = 6  # 10분 간격 × 6 ≈ 1시간 연속 실패 시 경고
+FAIL_ALERT_AFTER = 3  # 1시간 간격 × 3회 ≈ 3시간 연속 실패 시 경고 메일 (일시적 429 는 무시)
 
 RED, RED_BG, INK, SUB, MUTED, LINE, GRAY_BG = "#d71920", "#fdecec", "#111111", "#555555", "#999999", "#e6e6e6", "#f4f4f5"
 FONT = "-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif"
@@ -291,7 +291,7 @@ def build_failure_email(source, count, error, recovered=False):
         body = f"{source} 공고 수집이 다시 정상 동작합니다."
     else:
         subject = f"[JOB ALERT] {source} 공고 수집 실패 중"
-        body = (f"{source} 공고를 {count}회 연속(약 {count * 10}분) 가져오지 못했습니다.<br>"
+        body = (f"{source} 공고를 {count}회 연속(약 {count}시간) 가져오지 못했습니다.<br>"
                 f"사이트 구조가 바뀌었을 수 있어 수집 코드 확인이 필요합니다.<br><br>"
                 f"<code>{escape(short(str(error), 500))}</code>")
     return subject, f'<div style="font-family:{FONT};font-size:14px;color:{INK}">{body}</div>'

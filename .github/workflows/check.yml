@@ -1,9 +1,11 @@
 name: JOB ALERT check
 
 on:
+  # 주 실행: cron-job.org 가 매시 정각 workflow_dispatch API 를 호출 (GitHub 자체 스케줄은 실제로 몇 시간씩 밀림)
+  workflow_dispatch:
+  # 예비 실행: cron-job.org 가 멈춰도 완전히 끊기지 않도록 3시간마다 (GitHub 사정으로 늦어질 수 있음)
   schedule:
-    - cron: "*/10 * * * *"   # 10분마다 (GitHub 사정으로 몇 분 늦어질 수 있음)
-  workflow_dispatch:          # Actions 탭에서 수동 실행 가능
+    - cron: "37 */3 * * *"
 
 permissions:
   contents: write
@@ -33,7 +35,7 @@ jobs:
           if [ -n "$(git status --porcelain seen.json status.json screened.json)" ]; then
             for f in seen.json status.json screened.json; do [ -f "$f" ] && git add "$f"; done
             git commit -m "Update alert state"
-            git push
+            git pull -q --rebase && git push
           else
             # 저장소가 60일간 활동이 없으면 GitHub이 스케줄을 끄므로 45일마다 빈 커밋
             last=$(git log -1 --format=%ct)
