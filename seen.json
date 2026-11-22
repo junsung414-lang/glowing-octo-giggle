@@ -1,7 +1,28 @@
 {
+  "amazon:10586098": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "notified": "2026-11-22T08:01:13Z",
+    "posted": "2026-10-22",
+    "title": "Datacenter Security Specialist"
+  },
+  "apple:200621799": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "notified": "2026-11-22T08:01:09Z",
+    "posted": "2025-09-18",
+    "title": "KR-관리자 "
+  },
   "apple:200694244": {
     "notified": "2026-11-18T10:17:36Z",
     "posted": "2026년 11월 10일",
     "title": "Apple Sales Internship - Korea"
+  },
+  "microsoft:1970393556994816": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "notified": "2026-11-22T08:02:26Z",
+    "posted": "2026-09-14",
+    "title": "Critical Environment Energy Marshal"
   }
 }

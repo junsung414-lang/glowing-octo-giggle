@@ -1,4 +1,937 @@
 {
+  "amazon:10381106": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Chief)",
+      "기술직 (Engineer)",
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "DCEO Chief Engineer, ICN - DCEO",
+    "url": "https://www.amazon.jobs/en/jobs/10381106/dceo-chief-engineer-icn-dceo"
+  },
+  "amazon:10385006": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Operations Engineer , DCO (Data Center Operations)",
+    "url": "https://www.amazon.jobs/en/jobs/10385006/data-center-operations-engineer-dco-data-center-operations"
+  },
+  "amazon:10413104": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineering)"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Engineering Operations Technician, ICN - DCEO",
+    "url": "https://www.amazon.jobs/en/jobs/10413104/data-center-engineering-operations-technician-icn-dceo"
+  },
+  "amazon:10415561": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Incident Management Engineer (Korean/English bilingual), Incident Detection and Response",
+    "url": "https://www.amazon.jobs/en/jobs/10415561/incident-management-engineer-korean-english-bilingual-incident-detection-and-response"
+  },
+  "amazon:10432633": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Sr)",
+      "필수 경력 13년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Sr Sales Manager, Samsung, AWS Korea",
+    "url": "https://www.amazon.jobs/en/jobs/10432633/sr-sales-manager-samsung-aws-korea"
+  },
+  "amazon:10436657": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineering)",
+      "필수 경력 4년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Engineering Operations Engineer, ICN - DCEO",
+    "url": "https://www.amazon.jobs/en/jobs/10436657/data-center-engineering-operations-engineer-icn-dceo"
+  },
+  "amazon:10445333": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Director)",
+      "필수 경력 20년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Director, Solution Architecture, Korea, AWS Korea",
+    "url": "https://www.amazon.jobs/en/jobs/10445333/director-solution-architecture-korea-aws-korea"
+  },
+  "amazon:10451057": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Principal)",
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Principal Strategic Transformation Program Leader, Professional Services, Korea",
+    "url": "https://www.amazon.jobs/en/jobs/10451057/principal-strategic-transformation-program-leader-professional-services-korea"
+  },
+  "amazon:10467069": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Head)",
+      "필수 경력 15년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Head of Professional Services, Korea, Professional Services",
+    "url": "https://www.amazon.jobs/en/jobs/10467069/head-of-professional-services-korea-professional-services"
+  },
+  "amazon:10472008": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Senior Engagement Manager, Professional Services, Korea",
+    "url": "https://www.amazon.jobs/en/jobs/10472008/senior-engagement-manager-professional-services-korea"
+  },
+  "amazon:10472010": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Sr)",
+      "필수 경력 7년 이상",
+      "석사 이상 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Sr. Engagement Manager, Tech Lead, Professional Services Korea",
+    "url": "https://www.amazon.jobs/en/jobs/10472010/sr-engagement-manager-tech-lead-professional-services-korea"
+  },
+  "amazon:10472950": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Industry Specialist, Capital Markets and Banking, APJ Financial Services Industry Development, AWS",
+    "url": "https://www.amazon.jobs/en/jobs/10472950/industry-specialist-capital-markets-and-banking-apj-financial-services-industry-development-aws"
+  },
+  "amazon:10473345": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "기술직 (Architect)",
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Senior AI Specialist Solutions Architect, AWS, Specialist Org",
+    "url": "https://www.amazon.jobs/en/jobs/10473345/senior-ai-specialist-solutions-architect-aws-specialist-org"
+  },
+  "amazon:10493835": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Operation Engineer, DCO (Data Center Operations)",
+    "url": "https://www.amazon.jobs/en/jobs/10493835/data-center-operation-engineer-dco-data-center-operations"
+  },
+  "amazon:10499435": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Senior Manager - Trade Compliance, APAC, Global Trade and Product Compliance",
+    "url": "https://www.amazon.jobs/en/jobs/10499435/senior-manager-trade-compliance-apac-global-trade-and-product-compliance"
+  },
+  "amazon:10507604": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Operation Engineer, DCO (Data Center Operations)",
+    "url": "https://www.amazon.jobs/en/jobs/10507604/data-center-operation-engineer-dco-data-center-operations"
+  },
+  "amazon:10516500": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 12년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Country Manager, Korea, Amazon Ads",
+    "url": "https://www.amazon.jobs/en/jobs/10516500/country-manager-korea-amazon-ads"
+  },
+  "amazon:10523222": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineering)",
+      "필수 경력 4년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Engineering Operations Engineer, ICN - DCEO",
+    "url": "https://www.amazon.jobs/en/jobs/10523222/data-center-engineering-operations-engineer-icn-dceo"
+  },
+  "amazon:10523328": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineering)",
+      "필수 경력 4년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Engineering Operations Engineer, DCEO",
+    "url": "https://www.amazon.jobs/en/jobs/10523328/data-center-engineering-operations-engineer-dceo"
+  },
+  "amazon:10523329": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineering)",
+      "필수 경력 4년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Engineering Operations Engineer, DCEO",
+    "url": "https://www.amazon.jobs/en/jobs/10523329/data-center-engineering-operations-engineer-dceo"
+  },
+  "amazon:10529528": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Account Manager, Retail, RCG",
+    "url": "https://www.amazon.jobs/en/jobs/10529528/account-manager-retail-rcg"
+  },
+  "amazon:10529534": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Technician)",
+      "필수 경력 2년 이상",
+      "기술 전공 학위 필수",
+      "장애인 대상 전형"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Operations Program Technician - People with Disability (PwD), ICN",
+    "url": "https://www.amazon.jobs/en/jobs/10529534/data-center-operations-program-technician-people-with-disability-pwd-icn"
+  },
+  "amazon:10531303": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Operation Engineer, DCO (Data Center Operations)",
+    "url": "https://www.amazon.jobs/en/jobs/10531303/data-center-operation-engineer-dco-data-center-operations"
+  },
+  "amazon:10531367": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Principal)",
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Principal Account Manager, Retail/CPG ENT, RCG",
+    "url": "https://www.amazon.jobs/en/jobs/10531367/principal-account-manager-retail-cpg-ent-rcg"
+  },
+  "amazon:10554480": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Leader)",
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Deal Execution Leader, Strategic Accounts, APJC Strategic Enterprise Sales",
+    "url": "https://www.amazon.jobs/en/jobs/10554480/deal-execution-leader-strategic-accounts-apjc-strategic-enterprise-sales"
+  },
+  "amazon:10554481": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "필수 경력 12년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Senior Deal Pursuit Leader, Strategic Accounts, APJC Strategic Enterprise Sales",
+    "url": "https://www.amazon.jobs/en/jobs/10554481/senior-deal-pursuit-leader-strategic-accounts-apjc-strategic-enterprise-sales"
+  },
+  "amazon:10557791": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Field Sales Operation Manager, GSO (Global Sales Operation)",
+    "url": "https://www.amazon.jobs/en/jobs/10557791/field-sales-operation-manager-gso-global-sales-operation"
+  },
+  "amazon:10563415": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Office Manager, ICN",
+    "url": "https://www.amazon.jobs/en/jobs/10563415/office-manager-icn"
+  },
+  "amazon:10570225": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Associate Delivery Consultant - App/Dev, AWS Professional Services A2C",
+    "url": "https://www.amazon.jobs/en/jobs/10570225/associate-delivery-consultant-app-dev-aws-professional-services-a2c"
+  },
+  "amazon:10570227": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Architect)",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Associate Delivery Consultant - Cloud Architect, AWS Professional Services A2C",
+    "url": "https://www.amazon.jobs/en/jobs/10570227/associate-delivery-consultant-cloud-architect-aws-professional-services-a2c"
+  },
+  "amazon:10571626": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Sr)",
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Sr Partner Development Manager, Korea Partner Orgaznization",
+    "url": "https://www.amazon.jobs/en/jobs/10571626/sr-partner-development-manager-korea-partner-orgaznization"
+  },
+  "amazon:10572804": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Operation Manager",
+    "url": "https://www.amazon.jobs/en/jobs/10572804/data-center-operation-manager"
+  },
+  "amazon:10572890": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineering)",
+      "필수 경력 5년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Engineering Operations Engineer, ICN - DCEO",
+    "url": "https://www.amazon.jobs/en/jobs/10572890/data-center-engineering-operations-engineer-icn-dceo"
+  },
+  "amazon:10576386": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Sr)",
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Sr. Specialist SA, AI, AWS WWSO GTM Specialists-APJ",
+    "url": "https://www.amazon.jobs/en/jobs/10576386/sr-specialist-sa-ai-aws-wwso-gtm-specialists-apj"
+  },
+  "amazon:10576871": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Regional Environmental Engineer, AWS Environmental - DCC Communities",
+    "url": "https://www.amazon.jobs/en/jobs/10576871/regional-environmental-engineer-aws-environmental-dcc-communities"
+  },
+  "amazon:10578368": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Technical Consultant (TAM) - AMAZON Web Services, Korea , Partner/FSI",
+    "url": "https://www.amazon.jobs/en/jobs/10578368/technical-consultant-tam-amazon-web-services-korea-partner-fsi"
+  },
+  "amazon:10582284": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "장애인 대상 전형"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "DCO Program Tech – L&D Specialist People with Disability (PwD), ICN",
+    "url": "https://www.amazon.jobs/en/jobs/10582284/dco-program-tech-l-d-specialist-people-with-disability-pwd-icn"
+  },
+  "amazon:10585972": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Forward Deployed Engineer, AWS Forward Deployed Engineering",
+    "url": "https://www.amazon.jobs/en/jobs/10585972/forward-deployed-engineer-aws-forward-deployed-engineering"
+  },
+  "amazon:10589838": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Sr)",
+      "기술직 (Engineer)",
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Sr Forward Deployed Engineer, AWS Forward Deployed Engineering",
+    "url": "https://www.amazon.jobs/en/jobs/10589838/sr-forward-deployed-engineer-aws-forward-deployed-engineering"
+  },
+  "amazon:10589906": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Lead)",
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Network Deployment Build Lead, Global Network Delivery",
+    "url": "https://www.amazon.jobs/en/jobs/10589906/network-deployment-build-lead-global-network-delivery"
+  },
+  "amazon:10591992": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Strategic Partner Development Manager, AWS Partner Organization, Korea",
+    "url": "https://www.amazon.jobs/en/jobs/10591992/strategic-partner-development-manager-aws-partner-organization-korea"
+  },
+  "amazon:10592136": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "기술직 (Engineer)",
+      "필수 경력 5년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Senior Equipment Engineer, Annapurna Labs",
+    "url": "https://www.amazon.jobs/en/jobs/10592136/senior-equipment-engineer-annapurna-labs"
+  },
+  "amazon:10595012": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Account Executive, KR Global Expansion, MENA Marketplace",
+    "url": "https://www.amazon.jobs/en/jobs/10595012/account-executive-kr-global-expansion-mena-marketplace"
+  },
+  "amazon:10595030": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Data Center Operations Engineer,  ICN - DCO",
+    "url": "https://www.amazon.jobs/en/jobs/10595030/data-center-operations-engineer-icn-dco"
+  },
+  "amazon:10595117": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Technician)",
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "CONTROLS Technician, North Asia, APAC Controls Deployment & Service",
+    "url": "https://www.amazon.jobs/en/jobs/10595117/controls-technician-north-asia-apac-controls-deployment-service"
+  },
+  "amazon:10595147": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Lead)",
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Inbound Lead Development Representative, MRC, Marketing Response Center",
+    "url": "https://www.amazon.jobs/en/jobs/10595147/inbound-lead-development-representative-mrc-marketing-response-center"
+  },
+  "amazon:10595335": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Architect)",
+      "필수 경력 4년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Colo Physical Security Architect, Colocation Regional Engineering",
+    "url": "https://www.amazon.jobs/en/jobs/10595335/colo-physical-security-architect-colocation-regional-engineering"
+  },
+  "amazon:10596004": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Technical Consultant (TAM) - AMAZON Web Services, Korea , Gaming",
+    "url": "https://www.amazon.jobs/en/jobs/10596004/technical-consultant-tam-amazon-web-services-korea-gaming"
+  },
+  "amazon:10596225": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Architect)"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Associate Solutions Architect, APJ ECT SA (Field Tech)",
+    "url": "https://www.amazon.jobs/en/jobs/10596225/associate-solutions-architect-apj-ect-sa-field-tech"
+  },
+  "amazon:10596227": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Architect)"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Associate Solutions Architect, APJ ECT SA (Field Tech)",
+    "url": "https://www.amazon.jobs/en/jobs/10596227/associate-solutions-architect-apj-ect-sa-field-tech"
+  },
+  "amazon:10597263": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Global Account Representative, Automotive & Manufacturing, AWS Industries",
+    "url": "https://www.amazon.jobs/en/jobs/10597263/global-account-representative-automotive-manufacturing-aws-industries"
+  },
+  "amazon:10599628": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Account Executive (New Seller Recruiting), KR Global Expansion, AU Marketplace",
+    "url": "https://www.amazon.jobs/en/jobs/10599628/account-executive-new-seller-recruiting-kr-global-expansion-au-marketplace"
+  },
+  "amazon:10599631": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Strategic Account Manager, Amazon Global Selling Korea, KR AGS - SAS-Pro",
+    "url": "https://www.amazon.jobs/en/jobs/10599631/strategic-account-manager-amazon-global-selling-korea-kr-ags-sas-pro"
+  },
+  "amazon:10599632": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Strategic Account Manager, Amazon Global Selling Korea, SAS-Pro",
+    "url": "https://www.amazon.jobs/en/jobs/10599632/strategic-account-manager-amazon-global-selling-korea-sas-pro"
+  },
+  "amazon:10599633": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Strategic Account Manager, Amazon Global Selling Korea, SAS-Pro",
+    "url": "https://www.amazon.jobs/en/jobs/10599633/strategic-account-manager-amazon-global-selling-korea-sas-pro"
+  },
+  "amazon:10599634": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Strategic Account Manager, Amazon Global Selling Korea, SAS-Pro",
+    "url": "https://www.amazon.jobs/en/jobs/10599634/strategic-account-manager-amazon-global-selling-korea-sas-pro"
+  },
+  "amazon:10599738": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Leader)",
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Japan & India Team Leader, New Seller Recruiting Team, Amazon Global Selling Korea",
+    "url": "https://www.amazon.jobs/en/jobs/10599738/japan-india-team-leader-new-seller-recruiting-team-amazon-global-selling-korea"
+  },
+  "amazon:10600848": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Technical Consultant (TAM) - AMAZON Web Services, Korea , Telco&Media",
+    "url": "https://www.amazon.jobs/en/jobs/10600848/technical-consultant-tam-amazon-web-services-korea-telco-media"
+  },
+  "amazon:10603966": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Data Center Operations Engineer, DCO (Data Center Operations)",
+    "url": "https://www.amazon.jobs/en/jobs/10603966/data-center-operations-engineer-dco-data-center-operations"
+  },
+  "amazon:10603982": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Software Development Engineer, AWS Forward Deployed Engineering",
+    "url": "https://www.amazon.jobs/en/jobs/10603982/software-development-engineer-aws-forward-deployed-engineering"
+  },
+  "amazon:10606716": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 12년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Country Manager, Korea, Amazon Ads",
+    "url": "https://www.amazon.jobs/en/jobs/10606716/country-manager-korea-amazon-ads"
+  },
+  "amazon:10609344": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Data Center Operation Engineer, DCO (Data Center Operations)",
+    "url": "https://www.amazon.jobs/en/jobs/10609344/data-center-operation-engineer-dco-data-center-operations"
+  },
+  "amazon:10609345": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Data Center Operation Engineer, DCO (Data Center Operations)",
+    "url": "https://www.amazon.jobs/en/jobs/10609345/data-center-operation-engineer-dco-data-center-operations"
+  },
+  "amazon:10610023": {
+    "company": "Amazon Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:11Z",
+    "title": "Strategic Account Manager, Amazon Global Selling Korea, KR AGS - SAS-Pro",
+    "url": "https://www.amazon.jobs/en/jobs/10610023/strategic-account-manager-amazon-global-selling-korea-kr-ags-sas-pro"
+  },
+  "amazon:3168313": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Principal)",
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Principal Go-To-Market Specialist, GenAI/ML, AWS",
+    "url": "https://www.amazon.jobs/en/jobs/3168313/principal-go-to-market-specialist-genai-ml-aws"
+  },
+  "amazon:3171349": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Data Center Operations Engineer, DCO (Data Center Operations)",
+    "url": "https://www.amazon.jobs/en/jobs/3171349/data-center-operations-engineer-dco-data-center-operations"
+  },
+  "amazon:3199993": {
+    "company": "AWS Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:01:13Z",
+    "title": "Incident Management Engineer - bilingual (Korean & English), Incident Detection and Response",
+    "url": "https://www.amazon.jobs/en/jobs/3199993/incident-management-engineer-bilingual-korean-english-incident-detection-and-response"
+  },
+  "apple:200463726": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "장애인 대상 전형"
+    ],
+    "screened": "2026-11-22T08:01:10Z",
+    "title": "Apple Diversity Program - 장애인 채용",
+    "url": "https://jobs.apple.com/ko-kr/details/200463726-3631/apple-diversity-program-%EC%9E%A5%EC%95%A0%EC%9D%B8-%EC%B1%84%EC%9A%A9"
+  },
+  "apple:200627102": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 12년 이상"
+    ],
+    "screened": "2026-11-22T08:01:06Z",
+    "title": "Strategist, Marketing Communications - Korea",
+    "url": "https://jobs.apple.com/ko-kr/details/200627102-3631/strategist-marketing-communications-korea"
+  },
+  "apple:200646791": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:01:04Z",
+    "title": "KR_상급 관리자",
+    "url": "https://jobs.apple.com/ko-kr/details/200646791-3631/kr-senior-manager"
+  },
+  "apple:200660418": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 5년 이상",
+      "석사 이상 학위 필수"
+    ],
+    "screened": "2026-11-22T08:01:02Z",
+    "title": "Packaging Assembly Engineer",
+    "url": "https://jobs.apple.com/ko-kr/details/200660418-3631/packaging-assembly-engineer"
+  },
+  "apple:200669935": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:01:00Z",
+    "title": "Business Partnerships Manager, Apple Music",
+    "url": "https://jobs.apple.com/ko-kr/details/200669935-3631/business-partnerships-manager-apple-music"
+  },
+  "apple:200670285": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "기술직 (Engineer)",
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:00:58Z",
+    "title": "Senior Data Engineer & Scientist — Apple Korea",
+    "url": "https://jobs.apple.com/ko-kr/details/200670285-3631/senior-data-engineer-scientist-apple-korea"
+  },
+  "apple:200674275": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 12년 이상"
+    ],
+    "screened": "2026-11-22T08:00:54Z",
+    "title": "PR Manager, iPhone - Korea",
+    "url": "https://jobs.apple.com/ko-kr/details/200674275-3631/pr-manager-iphone-korea"
+  },
+  "apple:200676545": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)"
+    ],
+    "screened": "2026-11-22T08:00:56Z",
+    "title": "Product Quality Engineer, Display/Component - Korea",
+    "url": "https://jobs.apple.com/ko-kr/details/200676545/product-quality-engineer-display-component-korea"
+  },
+  "apple:200679123": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 12년 이상"
+    ],
+    "screened": "2026-11-22T08:00:52Z",
+    "title": "Corporate Communications Manager, Korea",
+    "url": "https://jobs.apple.com/ko-kr/details/200679123-3631/corporate-communications-manager-korea"
+  },
+  "apple:200682849": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:00:51Z",
+    "title": "Business Affairs Clearance Manager, App Store - Korea",
+    "url": "https://jobs.apple.com/ko-kr/details/200682849-3631/business-affairs-clearance-manager-app-store-korea"
+  },
+  "apple:200686308": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "기술직 (Engineer)",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:00:49Z",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.apple.com/ko-kr/details/200686308-3631/senior-software-engineer"
+  },
+  "apple:200686926": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:00:47Z",
+    "title": "Business Manager, Korea -  App Store",
+    "url": "https://jobs.apple.com/ko-kr/details/200686926-3631/business-manager-korea-%E2%80%A8app-store"
+  },
+  "apple:200692141": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 8년 이상"
+    ],
+    "screened": "2026-11-22T08:00:45Z",
+    "title": "Sales Operations Manager",
+    "url": "https://jobs.apple.com/ko-kr/details/200692141-3631/sales-operations-manager"
+  },
+  "apple:200693357": {
+    "company": "Apple Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "필수 경력 12년 이상"
+    ],
+    "screened": "2026-11-22T08:00:43Z",
+    "title": "Consumer - Mono-brand, Senior Account Lead",
+    "url": "https://jobs.apple.com/ko-kr/details/200693357-3631/consumer-mono-brand-senior-account-lead"
+  },
+  "google:105591137787355846": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Head)",
+      "필수 경력 15년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Head of gTech Ads, Large Customer Sales, Korea (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/105591137787355846-head-of-gtech-ads-large-customer-sales-korea-english-korean"
+  },
+  "google:108530052911506118": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Agentic Data Cloud Sales Specialist III, Google Cloud (Korean, English)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/108530052911506118-agentic-data-cloud-sales-specialist-iii-google-cloud-korean-english"
+  },
+  "google:110340509670482630": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Customer Engineer, Google Cloud (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/110340509670482630-customer-engineer-google-cloud-english-korean"
+  },
+  "google:112478551638188742": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 5년 이상",
+      "Japanese 필수"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Measurement and Incrementality Expert, gTech Ads, Google Customer Solutions (English, Japanese, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/112478551638188742-measurement-and-incrementality-expert-gtech-ads-google-customer-solutions-english-japanese-korean"
+  },
+  "google:119840138468434630": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Outcome Customer Engineer, AI, Google Cloud",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/119840138468434630-outcome-customer-engineer-ai-google-cloud"
+  },
   "google:121216851580461766": {
     "company": "Google Korea",
     "kind": "인턴",
@@ -9,6 +942,71 @@
     "screened": "2026-11-18T18:28:35Z",
     "title": "Associate Account Strategist, gReach Program for People with Disabilities or Veterans (장애인 or 보훈대상자) (English, Korean)",
     "url": "https://www.google.com/about/careers/applications/jobs/results/121216851580461766-associate-account-strategist-greach-program-for-people-with-disabilities-or-veterans-or-english-korean"
+  },
+  "google:124964929953243846": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 6년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Customer Engineer, Digital Native, Google Cloud (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/124964929953243846-customer-engineer-digital-native-google-cloud-english-korean"
+  },
+  "google:127375594164757190": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "기술직 (Engineering)",
+      "필수 경력 5년 이상",
+      "Chinese 필수"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Senior Technical Solutions Consultant, Auto Partner Engineering (Korean, English, Chinese)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/127375594164757190-senior-technical-solutions-consultant-auto-partner-engineering-korean-english-chinese"
+  },
+  "google:128586509996434118": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Measurement Specialist, Large Customer Sales (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/128586509996434118-measurement-specialist-large-customer-sales-english-korean"
+  },
+  "google:128813564247843526": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Head)",
+      "필수 경력 15년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Head of YouTube Music Partnerships (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/128813564247843526-head-of-youtube-music-partnerships-english-korean"
+  },
+  "google:130206031299912390": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Account Strategist, Google Customer Solutions (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/130206031299912390-account-strategist-google-customer-solutions-english-korean"
+  },
+  "google:132951558273802950": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Growth Manager, App Sales (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/132951558273802950-growth-manager-app-sales-english-korean"
   },
   "google:134693011551331014": {
     "company": "Google Korea",
@@ -21,5 +1019,465 @@
     "screened": "2026-11-18T18:28:35Z",
     "title": "Associate Customer Engineer, gReach Program for People with Disabilities or Veterans (장애인 or 보훈대상자) (English, Korean)",
     "url": "https://www.google.com/about/careers/applications/jobs/results/134693011551331014-associate-customer-engineer-greach-program-for-people-with-disabilities-or-veterans-or-english-korean"
+  },
+  "google:137587576843182790": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Lead)",
+      "필수 경력 6년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Strategy and Operations Lead, Greater China and Korea GTM (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/137587576843182790-strategy-and-operations-lead-greater-china-and-korea-gtm-english-korean"
+  },
+  "google:138732638746616518": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Strategic Partnerships Manager, YouTube Product Partnerships (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/138732638746616518-strategic-partnerships-manager-youtube-product-partnerships-english-korean"
+  },
+  "google:139150453165171398": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "People Consultant (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/139150453165171398-people-consultant-english-korean"
+  },
+  "google:142582849294213830": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "AI Sales Specialist, Google Cloud (Korean, English)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/142582849294213830-ai-sales-specialist-google-cloud-korean-english"
+  },
+  "google:72572552349655750": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 11년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Manager, AI and Infrastructure, Strategic Initiatives (Korean, English)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/72572552349655750-manager-ai-and-infrastructure-strategic-initiatives-korean-english"
+  },
+  "google:77872640777167558": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Practice Customer Engineer, Migrations, Infrastructure and App",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/77872640777167558-practice-customer-engineer-migrations-infrastructure-and-app"
+  },
+  "google:79231714458510022": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 9년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Technical Operations Manager, Third-Party Data Centers (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/79231714458510022-technical-operations-manager-third-party-data-centers-english-korean"
+  },
+  "google:84970505878020806": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 8년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Agency Business Development Manager, DV360 (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/84970505878020806-agency-business-development-manager-dv360-english-korean"
+  },
+  "google:84971440033407686": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Account Manager, Large Customer Sales, Commerce",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/84971440033407686-account-manager-large-customer-sales-commerce"
+  },
+  "google:88291067501126342": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Agentic Data Cloud Sales Specialist II, Google Cloud (Korean, English)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/88291067501126342-agentic-data-cloud-sales-specialist-ii-google-cloud-korean-english"
+  },
+  "google:88960528348521158": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 6년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Outcome Customer Engineer, Google Cloud (Korean, English)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/88960528348521158-outcome-customer-engineer-google-cloud-korean-english"
+  },
+  "google:90500171044922054": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Head)",
+      "필수 경력 11년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Industry Head, Lifestyle DTC, LCS (Korean, English)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/90500171044922054-industry-head-lifestyle-dtc-lcs-korean-english"
+  },
+  "google:94302880596402886": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 7년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Field Sales Representative, Digital Natives, Google Cloud (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/94302880596402886-field-sales-representative-digital-natives-google-cloud-english-korean"
+  },
+  "google:94627668976116422": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 8년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Performance Specialist (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/94627668976116422-performance-specialist-english-korean"
+  },
+  "google:97264933514683078": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 10년 이상"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Customer Engineer, Digital Native, Google Cloud (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/97264933514683078-customer-engineer-digital-native-google-cloud-english-korean"
+  },
+  "google:98185512509940422": {
+    "company": "Google Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)"
+    ],
+    "screened": "2026-11-22T08:02:31Z",
+    "title": "Publisher Solutions Engineer, gTech (English, Korean)",
+    "url": "https://www.google.com/about/careers/applications/jobs/results/98185512509940422-publisher-solutions-engineer-gtech-english-korean"
+  },
+  "microsoft:1970393556873011": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 5년 이상",
+      "기술 전공 학위 필수",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:01:21Z",
+    "title": "Solution Engineer",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556873011"
+  },
+  "microsoft:1970393556925679": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:02:30Z",
+    "title": "Critical Environment (CE) Technical Trainer",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556925679"
+  },
+  "microsoft:1970393556939424": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Principal)",
+      "필수 경력 12년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:02:07Z",
+    "title": "Microsoft Frontier Company - Principal Consultant, Data & AI",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556939424"
+  },
+  "microsoft:1970393556958119": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Architect)",
+      "필수 경력 12년 이상",
+      "기술 전공 학위 필수",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:02:28Z",
+    "title": "Data Solution Architect",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556958119"
+  },
+  "microsoft:1970393556982125": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 10년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:02:22Z",
+    "title": "Frontier Industry Advisor, Manufacturing and Mobility - Korea",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556982125"
+  },
+  "microsoft:1970393556988908": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Architect)",
+      "필수 경력 8년 이상"
+    ],
+    "screened": "2026-11-22T08:02:20Z",
+    "title": "Asia AI Token Ops Solution Architect",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393556988908"
+  },
+  "microsoft:1970393557000205": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 8년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:02:17Z",
+    "title": "Construction Project Management",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557000205"
+  },
+  "microsoft:1970393557001957": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:02:19Z",
+    "title": "CE Field Service Engineer",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557001957"
+  },
+  "microsoft:1970393557004901": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Technician)",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:01:54Z",
+    "title": "Logistics Technician (Busan)",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557004901"
+  },
+  "microsoft:1970393557024919": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 5년 이상"
+    ],
+    "screened": "2026-11-22T08:02:15Z",
+    "title": "Build Integration & Technical Infrastructure Manager",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557024919"
+  },
+  "microsoft:1970393557025678": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Technician)"
+    ],
+    "screened": "2026-11-22T08:02:06Z",
+    "title": "Data Center Technician",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557025678"
+  },
+  "microsoft:1970393557027010": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Technician)"
+    ],
+    "screened": "2026-11-22T08:01:56Z",
+    "title": "Logistics Technician (Seoul)",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557027010"
+  },
+  "microsoft:1970393557037794": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 5년 이상",
+      "기술 전공 학위 필수"
+    ],
+    "screened": "2026-11-22T08:02:10Z",
+    "title": "Metro EHS Construction Manager",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557037794"
+  },
+  "microsoft:1970393557039443": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:02:13Z",
+    "title": "Operational Excellence",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557039443"
+  },
+  "microsoft:1970393557040329": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 6년 이상"
+    ],
+    "screened": "2026-11-22T08:02:11Z",
+    "title": "Device Partner Technology Strategist",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557040329"
+  },
+  "microsoft:1970393557048481": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Principal)",
+      "필수 경력 12년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:02:04Z",
+    "title": "Principal Consultant",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557048481"
+  },
+  "microsoft:1970393557050335": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 4년 이상"
+    ],
+    "screened": "2026-11-22T08:01:52Z",
+    "title": "Site Environment Health and Safety Manager",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557050335"
+  },
+  "microsoft:1970393557050961": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Lead)"
+    ],
+    "screened": "2026-11-22T08:01:51Z",
+    "title": "Consulting Practice Lead",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557050961"
+  },
+  "microsoft:1970393557051194": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Architect)",
+      "필수 경력 3년 이상"
+    ],
+    "screened": "2026-11-22T08:02:02Z",
+    "title": "Cloud Solution Architect",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557051194"
+  },
+  "microsoft:1970393557052762": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "시니어 직급 (Senior)",
+      "필수 경력 8년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:01:58Z",
+    "title": "Senior Customer Success Manager （Partner）",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557052762"
+  },
+  "microsoft:1970393557055467": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 2년 이상"
+    ],
+    "screened": "2026-11-22T08:01:43Z",
+    "title": "CE Field Service Engineer",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557055467"
+  },
+  "microsoft:1970393557055582": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 10년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:02:00Z",
+    "title": "Go-To-Market (GTM) Manager (Cloud & AI Platforms Activation)",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557055582"
+  },
+  "microsoft:1970393557070242": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 4년 이상"
+    ],
+    "screened": "2026-11-22T08:01:45Z",
+    "title": "Datacenter Security Operations Manager",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557070242"
+  },
+  "microsoft:1970393557072550": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 8년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:01:49Z",
+    "title": "Support Escalation Manager",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557072550"
+  },
+  "microsoft:1970393557073110": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "기술직 (Engineer)",
+      "필수 경력 10년 이상",
+      "보훈 대상 전형"
+    ],
+    "screened": "2026-11-22T08:01:47Z",
+    "title": "Solution Engineer (Copilot and Microsoft 365)",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557073110"
+  },
+  "microsoft:1970393557074948": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 4년 이상"
+    ],
+    "screened": "2026-11-22T08:01:18Z",
+    "title": "Services Customer Operations Manager",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557074948"
+  },
+  "microsoft:1970393557075715": {
+    "company": "Microsoft Korea",
+    "kind": "정규직",
+    "reasons": [
+      "필수 경력 4년 이상"
+    ],
+    "screened": "2026-11-22T08:01:20Z",
+    "title": "Account Technology Strategist (Gaming)",
+    "url": "https://apply.careers.microsoft.com/careers/job/1970393557075715"
   }
 }
