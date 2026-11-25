@@ -1,6 +1,6 @@
 {
   "microsoft": {
-    "alerted": true,
-    "fails": 5
+    "alerted": false,
+    "fails": 0
   }
 }
